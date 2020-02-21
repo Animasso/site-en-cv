@@ -1,0 +1,80 @@
+/*  style generaux  */
+body{
+   margin: 0;
+   padding:0;
+   font size:1em;
+}
+
+#page{
+	width: 1000px;
+	margin: auto;
+	font-family: Arial;
+	font-size: 16px;
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+/*  header*/
+header{
+	background-color: pink;
+}
+}
+h1{
+	font-size: 40px;
+	margin-top: 50px
+}
+span
+{
+	color: blue;
+}
+#metier{
+	font-size: 25px;
+}
+/* partie formaexp*/
+
+#partie_droite{
+    flex-direction: column;
+    justify-content: center;
+    background-color: yellow;
+}
+.gauche{
+	float: left;
+}
+.droite
+
+}
+/*BLOC RECOMMANDATION*/
+#recommandation:{
+	display: flex;
+}
+.name{
+    flex-direction: ;
+}
+/*Partie gauche*/
+#photo img
+{   width: 200px;
+    height: 200px;
+    border-radius: 5px;
+}
+#partie_gauche{
+	width:33% ;
+	background-color: #58ACF6;
+	
+
+}
+#CONTACT h2{
+	width: 200px
+	text-align: center;
+    background-color: black;
+    color:#58ACF6;
+}
+#PROPOS h2{
+	text-align: center;
+	background-color: black;
+    color: #58ACF6;
+}
+#LOISIRS h2{
+	text-align: center;
+	background-color: black;
+	color: #58ACF6
+}
