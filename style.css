@@ -6,75 +6,97 @@ body{
 }
 
 #page{
-	width: 1000px;
+	max-width:1200px;
 	margin: auto;
 	font-family: Arial;
 	font-size: 16px;
 	display: flex;
 	flex-direction: row-reverse;
+    width: 100%;
 }
 
 /*  header*/
 header{
 	background-color: pink;
 }
+header .trait{
+	width: 10%;
 }
 h1{
-	font-size: 40px;
+	font-size: 2em;
 	margin-top: 50px
 }
-span
-{
-	color: blue;
+span{
+	color: #8DC4F5;
 }
 #metier{
 	font-size: 25px;
 }
+.trait{
+	border: solid #8DC4F5 1px;
+}
 /* partie formaexp*/
+.formaexp h2{
+	color: black;
+}
+.picto{
+	display: flex;
+	color: #8DC4F5;
+}
+.picto2{
+	color: #8DC4F5;
+}
 
+.i .picto{
+	color: #8DC4F5;
+	margin-left: 30px;
+}
 #partie_droite{
-    flex-direction: column;
-    justify-content: center;
     background-color: yellow;
+    padding :30px;
 }
 .gauche{
-	float: left;
+	margin:0;
 }
-.droite
-
+.droite{
+	margin: 30%;
 }
 /*BLOC RECOMMANDATION*/
 #recommandation:{
 	display: flex;
+	flex-direction: row;
 }
-.name{
-    flex-direction: ;
+#recommandation h2{
+	color: black;
 }
 /*Partie gauche*/
 #photo img
 {   width: 200px;
     height: 200px;
-    border-radius: 5px;
+    border-radius: 50%;
 }
 #partie_gauche{
 	width:33% ;
-	background-color: #58ACF6;
-	
-
+	background-color: #8DC4F5;
 }
-#CONTACT h2{
-	width: 200px
+#partie_gauche h2{
 	text-align: center;
     background-color: black;
-    color:#58ACF6;
+    color: #8DC4F5;
 }
-#PROPOS h2{
-	text-align: center;
-	background-color: black;
-    color: #58ACF6;
+#CONTACT p{
+	margin-left: 30px;
 }
-#LOISIRS h2{
-	text-align: center;
-	background-color: black;
-	color: #58ACF6
+#PROPOS{
+	height: 500px;
 }
+#PROPOS p{
+	margin-left: 30px;
+	margin-right: 30px;
+}
+#LOISIRS p{
+	margin-left: 30px;
+}
+#LOISIRS .circle{
+	border: solid black 1px;
+	border-radius: 50%;
