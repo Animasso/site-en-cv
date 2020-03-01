@@ -2,7 +2,7 @@
 body{
    margin: 0;
    padding:0;
-   font size:1em;
+   font-size:1em;
 }
 
 #page{
@@ -11,13 +11,29 @@ body{
 	font-family: Arial;
 	font-size: 16px;
 	display: flex;
-	flex-direction: row-reverse;
+	flex-direction: column;
     width: 100%;
 }
 
 /*  header*/
 header{
 	background-color: pink;
+	display:flex;
+	flex-direction: 
+	width:100%;
+}
+#photo{
+	background-color: #8DC4F5;
+}
+#photo img
+{   width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+main {
+	display: flex;
+	flex-direction: row-reverse;
+	width: 100%;
 }
 header .trait{
 	width: 10%;
@@ -36,85 +52,92 @@ span{
 	border: solid #8DC4F5 1px;
 }
 /* partie formaexp*/
-.entete{
+article{
 	display: flex;
-	align-items: center;
+	justify-content: flex-start;
+	align-items: flex-start;
+
 }
-.formaexp h2{
+main h2{
 	color: black;
 	padding-left: 40px;
-}
-.picto{
-	display: flex;
-	color: #8DC4F5;
+	justify-content: center;
+	padding-top: 50px;
 }
 .picto2{
 	color: #8DC4F5;
+	font-size:1.2em;
 	width: 50px;
 }
 
-.i .picto{
+.picto{
 	color: #8DC4F5;
-	margin-left: 30px;
-	width: 50px;
+	display: flex;
+	align-items: flex-start;
 }
 #partie_droite{
     background-color:yellow;
     padding :30px;
 }
 .gauche{
-
+	display: flex;
+	padding-top: 10px;
 }
-
-/*BLOC RECOMMANDATION*/
-#recommandation{
- 
+.droite{
+	align-items: flex-start;
+    margin: 10px;
+	margin-left: 30px;
+	padding-left: 50px;
+}
+/*BLOC RECOMMANDATION*/ 
+#recommandation{   
 }
 #recommandation h2{
 	color: black;
 	padding-left: 40px;	
 }
 .name{
-flex-direction: row;
+	display: flex;
+    flex-direction: row;
 }
 /*Partie gauche*/
-#photo img
-{   width: 200px;
-    height: 200px;
-    border-radius: 50%;
-}
+
 #partie_gauche{
 	width:33% ;
 	background-color: #8DC4F5;
 }
 #partie_gauche h2{
+	width: 100%;
 	text-align: center;
     background-color: black;
     color: #8DC4F5;
 }
-#CONTACT p{
+#contact p{
 	margin-left: 30px;
 }
-#PROPOS{
+#propos{
 	height: 500px;
 }
-#PROPOS p{
+#propos p{
 	margin-left: 30px;
 	margin-right: 30px;
 }
-#LOISIRS{
+#loisirs{
 }
 
-#LOISIRS p{
+#loisirs p{
 	margin-left: 30px;
 }
-#LOISIRS .i{
-	height: 100px;
-	width: 100px;
+#loisirs {
+}
+#cercle{
+	display: flex;
+	justify-content: space-around;
 }
 .circle{
 	border: solid black 5px;
 	border-radius: 50%;
-	width:50px;
-	height: 50px;
+	font-size: 20px;
+	padding: 20px;
+	align-items: center;
 }
