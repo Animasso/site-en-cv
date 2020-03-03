@@ -32,7 +32,7 @@ header{
 }
 main {
 	display: flex;
-	flex-direction: row-reverse;
+	flex-direction:row-reverse;
 	width: 100%;
 }
 header .trait{
@@ -87,8 +87,8 @@ main h2{
     background-color:yellow;
     padding :30px;
 }
-#partie_gauche{
-}
+
+
 .gauche{
 	display: flex;
 	padding-top: 10px;
@@ -115,7 +115,7 @@ main h2{
 /*Partie gauche*/
 
 #partie_gauche{
-	width:33% ;
+	width:40% ;
 	background-color: #8DC4F5;
 }
 #partie_gauche h2{
