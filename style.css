@@ -31,6 +31,11 @@ header .partie_gauche{
 header .partie_droite {
 	width: 75%;
 }
+header .trait{
+	width: 10%;
+	margin-left: 40px;
+}
+/* photo*/ 
 #photo{
 	height: 200px
 }
@@ -39,30 +44,38 @@ header .partie_droite {
     height: 200px;
     border-radius: 50%;
 }
-main {
-	display: flex;
-	flex-direction:row-reverse;
-	width: 100%;
-}
-header .trait{
-	width: 10%;
-}
+
+
 h1{
-	font-size: 2em;
-	margin-top: 50px
+	font-size: 3em;
+	margin-top: 50px;
+	margin-left:40px;
 }
 span{
 	color: #8DC4F5;
 }
 #metier{
 	font-size: 25px;
+	margin-left: 40px;
 }
 .trait{
 	border: solid #8DC4F5 1px;
+	margin-left: 30px;
 }
 .titre{
+	display: flex;	
+}
+/* main*/ 
+main {
 	display: flex;
-
+	flex-direction:row-reverse;
+	width: 100%;
+}
+main .partie_droite h2{
+	color: black;
+	padding-left:40px ;
+	justify-content: center;
+	padding-top: 50px;
 }
 article{
 	display: flex;
@@ -70,21 +83,15 @@ article{
 	justify-content: flex-start;
 }
 
-main .partie_droite h2{
-	color: black;
-	padding-left:40px ;
-	justify-content: center;
-	padding-top: 50px;
-}
+/* fontawsome*/ 
 .picto{
     align-items: center;
     display: flex;
-	margin-left: 20px;
 	margin-top:50px;
 	color: #8DC4F5;
 	font-size: 25px;
+	margin-left: 30px;
 }	    
-
 .picto2{
 	display: flex;
 	color: #8DC4F5;
@@ -95,7 +102,6 @@ main .partie_droite h2{
 /* bloc formation exp professionelle recommandation*/ 
 .partie_droite{
     background-color:yellow;
-    margin-left:30px;
     width: 75%;
 }
 
@@ -104,20 +110,25 @@ main .partie_droite h2{
 	display: flex;
 	padding-top: 10px;
 	width: 40%;
+	background-color: grey;
 }
-.droite{
-	display: 
+.droite{ 
     margin: 10px;
 	margin-left: 30px;
 	background-color: red;
 	width: 60%;
 }
 /*bloc recommandation*/ 
-#recommandation .gauche .droite{   
-	display: flex;
-	flex-direction: row;
-	width: 
+#recommandation .gauche {  
+    display: flex;
+	width: 50%;
 }
+#recommandation .droite{
+    display: flex;
+	flex-direction: row;
+	width: 50%;
+}
+
 #recommandation h2{
 	color: black;
 	padding-left: 40px;	
