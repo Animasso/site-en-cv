@@ -59,6 +59,7 @@ span{
 .trait{
 	border: solid #8DC4F5 1px;
 	margin-left: 30px;
+	width: 90%;
 }
 .titre{
 	display: flex;	
@@ -81,7 +82,7 @@ article{
 	justify-content: flex-start;
 }
 
-/* fontawsome*/ 
+/* fontawsome titre */ 
 .picto{
     align-items: center;
     display: flex;
@@ -89,7 +90,8 @@ article{
 	color: #8DC4F5;
 	font-size: 25px;
 	margin-left: 30px;
-}	    
+}	
+/* fontawsome point */     
 .picto2{
 	display: flex;
 	color: #8DC4F5;
@@ -180,8 +182,11 @@ article{
  	width:auto; 
  }
  header{
- 	    flex-direction: column-reverse;
- 	   } 
+ 	flex-direction: column-reverse;
+ }
+ header.partie_gauche{
+ 	background-color: none;
+ } 
  #photo img {
  	width: auto;
  	height: auto;
@@ -194,5 +199,11 @@ article{
  }	   
  .partie_gauche{
  	width: 100%;
+ }
+ #contact{
+ 	height: 300px;
+ }
+ #propos{
+ 	height: 200px;
  }
  }
