@@ -19,7 +19,7 @@ body{
 
 /*  header*/
 header{
-	background-color: pink;
+
 	display:flex;
 	flex-direction:row-reverse;
 	width:100%;
@@ -36,9 +36,7 @@ header .trait{
 	margin-left: 40px;
 }
 /* photo*/ 
-#photo{
-	height: 200px
-}
+
 #photo img
 {   width: 200px;
     height: 200px;
@@ -175,11 +173,26 @@ article{
 	align-items: center;
 }
 /*responsive */
- @media screen and (max-width: 768px){
- header main{
- 	    flex-direction: column;
- 	   }
- .partie_gauche header #photo{
+ @media all and (max-width: 768px){
+ #page{
+ 	display: flex;
+ 	flex-direction: column;
+ 	width:auto; 
+ }
+ header{
+ 	    flex-direction: column-reverse;
+ 	   } 
+ #photo img {
+ 	width: auto;
  	height: auto;
- 	background-color: none;
+    background-color: none;
+    justify-content :center;
+ }
+ main{
+ 	display: flex;
+ 	flex-direction: column;
+ }	   
+ .partie_gauche{
+ 	width: 100%;
+ }
  }
