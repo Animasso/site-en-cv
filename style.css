@@ -45,7 +45,7 @@ header .trait{
     border-radius: 50%;
 }
 
-
+/*titre et sous titre*/
 h1{
 	font-size: 3em;
 	margin-top: 50px;
@@ -98,6 +98,7 @@ article{
     align-items: center;
     margin-top: 10px;
     margin-right: 30px;
+    font-size: 15px;
 }
 /* bloc formation exp professionelle recommandation*/ 
 .partie_droite{
@@ -119,13 +120,12 @@ article{
 	width: 60%;
 }
 /*bloc recommandation*/ 
-#recommandation .gauche {  
+#recommandation article .gauche {  
     display: flex;
+    flex-direction: column;
 	width: 50%;
 }
-#recommandation .droite{
-    display: flex;
-	flex-direction: row;
+#recommandation article .droite{
 	width: 50%;
 }
 
@@ -141,7 +141,7 @@ article{
 	background-color: #8DC4F5;
 }
 .partie_gauche h2{
-	width:300px;
+	width:100%;
 	text-align: center;
     background-color: black;
     color: #8DC4F5;
@@ -162,6 +162,7 @@ article{
  #loisirs p{
 	margin-left: 30px;
 }
+/* fontawsome loisirs*/
  #cercle{
 	display: flex;
 	justify-content: space-around;
@@ -173,3 +174,12 @@ article{
 	padding: 20px;
 	align-items: center;
 }
+/*responsive */
+ @media screen and (max-width: 768px){
+ header main{
+ 	    flex-direction: column;
+ 	   }
+ .partie_gauche header #photo{
+ 	height: auto;
+ 	background-color: none;
+ }
