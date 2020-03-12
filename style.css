@@ -26,6 +26,7 @@ header{
 }
 header .partie_gauche{
 	width: 25%;
+	background: #8DC4F5;
 }
 
 header .partie_droite {
@@ -60,6 +61,11 @@ span{
 	border: solid #8DC4F5 1px;
 	margin-left: 30px;
 	width: 90%;
+}
+#metier .trait{
+	border: solid #8DC4F5 1px;
+	margin-left: 5px;
+	width: 10%;
 }
 .titre{
 	display: flex;	
@@ -111,9 +117,10 @@ article{
 	display: flex;
 	padding-top: 10px;
 	width: 40%;
+	margin-left: 10px;
 	background-color: grey;
 }
-.droite{ 
+.droite{
     margin: 10px;
 	margin-left: 30px;
 	background-color: red;
@@ -131,14 +138,14 @@ article{
 
 #recommandation h2{
 	color: black;
-	padding-left: 40px;	
+
 }
 
 /*Partie contact propos loisir*/
 
 .partie_gauche{
 	width:25% ;
-	background-color: #8DC4F5;
+	background: #8DC4F5;
 }
 .partie_gauche h2{
 	width:100%;
@@ -175,7 +182,7 @@ article{
 	align-items: center;
 }
 /*responsive */
- @media all and (max-width: 768px){
+ @media all and (max-width: 1024px){
  #page{
  	display: flex;
  	flex-direction: column;
@@ -183,20 +190,46 @@ article{
  }
  header{
  	flex-direction: column-reverse;
+ 	justify-content: center;
+ 	text-align: center;
  }
- header.partie_gauche{
- 	background-color: none;
+ 
+ header .partie_gauche{
+    background:none;
  } 
+ #metier .trait{
+   margin-left: 95px;
+ }
  #photo img {
  	width: auto;
  	height: auto;
-    background-color: none;
     justify-content :center;
  }
+ 	
  main{
  	display: flex;
  	flex-direction: column;
- }	   
+ }
+ article{
+ 	display: flex;
+ 	flex-direction: column;
+ 	justify-content: center;
+
+ }
+ .gauche{
+ 	width: 100%;
+ }
+
+ .partie_droite{
+ 	width: 100%;
+ }
+
+ .trait{
+ 	width: 90%;
+ } 
+ #recommandation article .gauche{
+ 	margin-left: 30px;
+ }
  .partie_gauche{
  	width: 100%;
  }
@@ -204,6 +237,9 @@ article{
  	height: 300px;
  }
  #propos{
- 	height: 200px;
+ 	height: 300px;
+ }
+ #loisirs{
+ 	margin-bottom: 30px;
  }
  }
